@@ -1,0 +1,44 @@
+{
+  "parent": "minecraft:block/block",
+  "texture_size": [64, 64],
+  "elements": [
+    {
+      "name": "Head",
+      "from": [4.4, 5.6, 4.4],
+      "to": [11.6, 12.8, 11.6],
+      "faces": {
+        "north": { "uv": [8, 8, 16, 16], "texture": "#skin" },
+        "south": { "uv": [24, 8, 32, 16], "texture": "#skin" },
+        "west":  { "uv": [0, 8, 8, 16], "texture": "#skin" },
+        "east":  { "uv": [16, 8, 24, 16], "texture": "#skin" },
+        "up":    { "uv": [8, 0, 16, 8], "texture": "#skin" },
+        "down":  { "uv": [16, 0, 24, 8], "texture": "#skin" }
+      }
+    },
+    {
+      "name": "Upper Body",
+      "from": [4.4, 0, 6.2],
+      "to": [11.6, 5.6, 9.8],
+      "south": { "uv": [32, 20, 40, 28], "texture": "#skin" },
+      "north": { "uv": [20, 20, 28, 28], "texture": "#skin" }
+    },
+    {
+      "name": "Upper Right Arm",
+      "from": [0.8, 0, 6.2],
+      "to": [4.4, 5.6, 9.8],
+      "south": {"uv":  [44, 20, 48, 28], "texture": "#skin" },
+      "north": {"uv":  [52, 20, 56, 28], "texture": "#skin" },
+      "west": {"uv":  [48, 20, 52, 28], "texture": "#skin" },
+      "up": {"uv":  [44, 16, 48, 20], "texture": "#skin" }
+    },
+    {
+      "name": "Upper Left Arm",
+      "from": [11.6, 0, 6.2],
+      "to": [15.2, 5.6, 9.8],
+      "south": {"uv":  [36, 52, 40, 60], "texture": "#skin" },
+      "north": {"uv":  [44, 52, 48, 60], "texture": "#skin" },
+      "east": {"uv":  [32, 52, 36, 60], "texture": "#skin" },
+      "up": {"uv":  [36, 48, 40, 52], "texture": "#skin" }
+    }
+  ]
+}
