@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=south": {
       "model": "dollcode:block/doll_test_lower"
+    },
+    "facing=north": {
+      "model": "dollcode:block/doll_test_lower",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dollcode:block/doll_test_lower",
+      "y": 90
+    },
+    "facing=east": {
+      "model": "dollcode:block/doll_test_lower",
+      "y": 270
     }
   }
 }

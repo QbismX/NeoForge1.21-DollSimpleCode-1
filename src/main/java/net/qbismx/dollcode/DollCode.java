@@ -1,6 +1,12 @@
 package net.qbismx.dollcode;
 
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.neoforged.neoforge.client.event.RegisterNamedRenderTypesEvent;
+import net.neoforged.neoforge.client.event.RegisterRenderBuffersEvent;
+import net.neoforged.neoforge.client.gui.map.RegisterMapDecorationRenderersEvent;
 import net.qbismx.dollcode.block.ModBlocks;
 import net.qbismx.dollcode.item.ModItems;
 import org.slf4j.Logger;
@@ -60,8 +66,6 @@ public class DollCode {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
     // クリエイティブモードのアイテム欄に人形ブロックを追加
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) { // 建築ブロックのタブに追加
-            event.accept(ModBlocks.DOLL_BLOCK);
-            event.accept(ModBlocks.DOLL_UPPER_BLOCK);
             event.accept(ModBlocks.DOLL_LOWER_BLOCK);
         }
     }
@@ -79,5 +83,17 @@ public class DollCode {
         static void onClientSetup(FMLClientSetupEvent event) {
 
         }
+
+        // 半透明にしたいブロックの設定
+        /*
+        @SubscribeEvent
+        public static void onRegisterRenderTypes(RegisterNamedRenderTypesEvent event){
+            event.register(
+                    ResourceLocation.fromNamespaceAndPath(DollCode.MODID, "translucent"),
+                    RenderType.translucent(),
+                    RenderType.translucent()
+            );
+        }
+         */
     }
 }

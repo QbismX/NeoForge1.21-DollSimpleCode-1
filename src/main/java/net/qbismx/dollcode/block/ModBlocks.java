@@ -5,11 +5,11 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.qbismx.dollcode.DollCode;
-import net.qbismx.dollcode.block.custom.DollBlock;
 import net.qbismx.dollcode.block.custom.DollLowerBlock;
 import net.qbismx.dollcode.block.custom.DollUpperBlock;
 import net.qbismx.dollcode.item.ModItems;
@@ -20,23 +20,22 @@ public class ModBlocks {
     // ゲームに認知させたいModのブロック全体用の登録箱
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(DollCode.MODID);
 
-    // 追加したいブロックの登録箱
-    public static final DeferredBlock<DollBlock> DOLL_BLOCK = registerBlock("doll_block_a",
-            ()-> new DollBlock(BlockBehaviour.Properties.of() // ブロックの性質を設定
-                    .strength(4f)           // ブロックを壊すときの硬さ
-                    .sound(SoundType.METAL) // 音の設定：金属
-            ));
-
     public static final DeferredBlock<DollUpperBlock> DOLL_UPPER_BLOCK = registerBlock("doll_test_upper",
             ()-> new DollUpperBlock(BlockBehaviour.Properties.of() // ブロックの性質を設定
-                    .strength(4f)           // ブロックを壊すときの硬さ
+                    .strength(4f, 3600000.0f)   // ブロックを壊すときの硬さ
                     .sound(SoundType.METAL) // 音の設定：金属
+                    .pushReaction(PushReaction.BLOCK) // ピストンでは押せない
+                    .lightLevel(x -> 15)
+                    .noOcclusion()
             ));
 
     public static final DeferredBlock<DollLowerBlock> DOLL_LOWER_BLOCK = registerBlock("doll_test_lower",
             ()-> new DollLowerBlock(BlockBehaviour.Properties.of() // ブロックの性質を設定
-                    .strength(4f)           // ブロックを壊すときの硬さ
+                    .strength(4f, 3600000.0f)    // ブロックを壊すときの硬さ
                     .sound(SoundType.METAL) // 音の設定：金属
+                    .pushReaction(PushReaction.BLOCK) // ピストンでは押せない
+                    .lightLevel(x -> 15)
+                    .noOcclusion()
             ));
 
     //　ブロック登録用のメソッド

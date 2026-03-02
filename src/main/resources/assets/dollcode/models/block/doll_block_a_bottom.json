@@ -1,7 +1,0 @@
-{
-  "parent" : "dollcode:block/doll_lower",
-  "textures": {
-    "particle": "dollcode:block/doll_skin",
-    "skin": "dollcode:block/doll_skin"
-  }
-}
