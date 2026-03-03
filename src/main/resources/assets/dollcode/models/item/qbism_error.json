@@ -1,3 +1,10 @@
 {
-  "parent": "dollcode:block/qbism_error"
+  "parent": "dollcode:block/qbism_error",
+  "display": {
+    "fixed": {
+      "rotation": [ -90, 0, 0 ],
+      "translation": [ 0, 0, -8 ],
+      "scale": [ 1, 1, 1 ]
+    }
+  }
 }

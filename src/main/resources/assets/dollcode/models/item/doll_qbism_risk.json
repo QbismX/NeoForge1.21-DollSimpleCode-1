@@ -1,3 +1,10 @@
 {
-  "parent": "dollcode:block/doll_qbism_risk"
+  "parent": "dollcode:block/doll_qbism_risk",
+  "display": {
+    "fixed": {
+      "rotation": [ -90, 0, 0 ],
+      "translation": [ 0, 0, -8 ],
+      "scale": [ 1, 1, 1 ]
+    }
+  }
 }

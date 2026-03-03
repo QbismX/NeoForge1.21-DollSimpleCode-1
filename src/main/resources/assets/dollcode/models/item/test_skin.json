@@ -1,3 +1,10 @@
 {
-  "parent": "dollcode:block/test_skin"
+  "parent": "dollcode:block/test_skin",
+  "display": {
+    "fixed": {
+      "rotation": [ -90, 0, 0 ],
+      "translation": [ 0, 0, -8 ],
+      "scale": [ 1, 1, 1 ]
+    }
+  }
 }
