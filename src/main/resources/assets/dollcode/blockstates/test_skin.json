@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "dollcode:block/test_skin"
+    },
+    "facing=north": {
+      "model": "dollcode:block/test_skin",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dollcode:block/test_skin",
+      "y": 90
+    },
+    "facing=east": {
+      "model": "dollcode:block/test_skin",
+      "y": 270
+    }
+  }
+}

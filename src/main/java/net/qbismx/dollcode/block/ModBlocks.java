@@ -38,6 +38,77 @@ public class ModBlocks {
                     .noOcclusion()
             ));
 
+    // 怪人キュビスム(黄色信号モード)
+    public static final DeferredBlock<DollLowerBlock> DOLL_RISK_BLOCK = registerBlock("doll_qbism_risk",
+            ()-> new DollLowerBlock(BlockBehaviour.Properties.of() // ブロックの性質を設定
+                    .strength(4f, 3600000.0f)    // ブロックを壊すときの硬さ
+                    .sound(SoundType.METAL) // 音の設定：金属
+                    .pushReaction(PushReaction.BLOCK) // ピストンでは押せない
+                    .lightLevel(x -> 15)
+                    .noOcclusion()
+            ));
+
+    // TEST_DOLL
+    public static final DeferredBlock<DollLowerBlock> TEST_DOLL = registerBlock("test_skin",
+            ()-> new DollLowerBlock(BlockBehaviour.Properties.of() // ブロックの性質を設定
+                    .strength(4f, 3600000.0f)    // ブロックを壊すときの硬さ
+                    .sound(SoundType.METAL) // 音の設定：金属
+                    .pushReaction(PushReaction.BLOCK) // ピストンでは押せない
+                    .lightLevel(x -> 15)
+                    .noOcclusion()
+            ));
+
+    // 怪人キュビスム(ハロウィンモード)
+    public static final DeferredBlock<DollLowerBlock> HALLOWEEN_MODE = registerBlock("qbism_halloween",
+            ()-> new DollLowerBlock(BlockBehaviour.Properties.of() // ブロックの性質を設定
+                    .strength(4f, 3600000.0f)    // ブロックを壊すときの硬さ
+                    .sound(SoundType.METAL) // 音の設定：金属
+                    .pushReaction(PushReaction.BLOCK) // ピストンでは押せない
+                    .lightLevel(x -> 15)
+                    .noOcclusion()
+            ));
+
+    // 怪人キュビスム(クリスマスモード)
+    public static final DeferredBlock<DollLowerBlock> CHRISTMAS_MODE = registerBlock("qbism_christmas",
+            ()-> new DollLowerBlock(BlockBehaviour.Properties.of() // ブロックの性質を設定
+                    .strength(4f, 3600000.0f)    // ブロックを壊すときの硬さ
+                    .sound(SoundType.METAL) // 音の設定：金属
+                    .pushReaction(PushReaction.BLOCK) // ピストンでは押せない
+                    .lightLevel(x -> 15)
+                    .noOcclusion()
+            ));
+
+    // 怪人キュビスム(新年モード)
+    public static final DeferredBlock<DollLowerBlock> NEW_YEAR_MODE = registerBlock("qbism_new_year",
+            ()-> new DollLowerBlock(BlockBehaviour.Properties.of() // ブロックの性質を設定
+                    .strength(4f, 3600000.0f)    // ブロックを壊すときの硬さ
+                    .sound(SoundType.METAL) // 音の設定：金属
+                    .pushReaction(PushReaction.BLOCK) // ピストンでは押せない
+                    .lightLevel(x -> 15)
+                    .noOcclusion()
+            ));
+
+    // 怪人キュビスム(エラーモード)
+    public static final DeferredBlock<DollLowerBlock> ERROR_MODE = registerBlock("qbism_error",
+            ()-> new DollLowerBlock(BlockBehaviour.Properties.of() // ブロックの性質を設定
+                    .strength(4f, 3600000.0f)    // ブロックを壊すときの硬さ
+                    .sound(SoundType.METAL) // 音の設定：金属
+                    .pushReaction(PushReaction.BLOCK) // ピストンでは押せない
+                    .lightLevel(x -> 15)
+                    .noOcclusion()
+            ));
+
+    // 怪人キュビスム(ファイナルモード)
+    public static final DeferredBlock<DollLowerBlock> FINAL_MODE = registerBlock("qbism_final_mode",
+            ()-> new DollLowerBlock(BlockBehaviour.Properties.of() // ブロックの性質を設定
+                    .strength(4f, 3600000.0f)    // ブロックを壊すときの硬さ
+                    .sound(SoundType.METAL) // 音の設定：金属
+                    .pushReaction(PushReaction.BLOCK) // ピストンでは押せない
+                    .lightLevel(x -> 15)
+                    .noOcclusion()
+            ));
+
+
     //　ブロック登録用のメソッド
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

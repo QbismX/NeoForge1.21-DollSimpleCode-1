@@ -1,0 +1,7 @@
+{
+  "parent": "dollcode:block/doll_test_lower",
+  "textures": {
+    "skin": "dollcode:block/qbism_halloween",
+    "particle": "dollcode:block/qbism_halloween"
+  }
+}

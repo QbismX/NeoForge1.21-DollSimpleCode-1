@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "dollcode:block/qbism_christmas"
+    },
+    "facing=north": {
+      "model": "dollcode:block/qbism_christmas",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dollcode:block/qbism_christmas",
+      "y": 90
+    },
+    "facing=east": {
+      "model": "dollcode:block/qbism_christmas",
+      "y": 270
+    }
+  }
+}

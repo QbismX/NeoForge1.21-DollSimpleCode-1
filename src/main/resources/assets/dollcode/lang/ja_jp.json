@@ -1,4 +1,11 @@
 {
   "block.dollcode.doll_test_upper": "上半身",
-  "block.dollcode.doll_test_lower": "怪人キュビスム"
+  "block.dollcode.doll_test_lower": "怪人キュビスム",
+  "block.dollcode.doll_qbism_risk": "怪人キュビスム(黄色信号モード)",
+  "block.dollcode.test_skin": "確認用",
+  "block.dollcode.qbism_halloween": "怪人キュビスム(ハロウィンモード)",
+  "block.dollcode.qbism_christmas": "怪人キュビスム(クリスマスモード)",
+  "block.dollcode.qbism_new_year": "怪人キュビスム(新年モード)",
+  "block.dollcode.qbism_error": "怪人キュビスム(エラーモード)",
+  "block.dollcode.qbism_final_mode": "怪人キュビスム(ファイナルモード)"
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/block",
-  "render_type": "minecraft:translucent",
+  "render_type": "minecraft:cutout",
   "texture_size": [64, 64],
   "textures": {
     "skin": "dollcode:block/doll_skin",
@@ -29,7 +29,7 @@
         "north": { "uv": [10, 2, 12, 4], "texture": "#skin" },
         "east": { "uv": [8, 2, 10, 4], "texture": "#skin" },
         "west": { "uv": [12, 2, 14, 4], "texture": "#skin" },
-        "up": { "uv": [5, 0, 12, 2], "texture": "#skin" },
+        "up": { "uv": [10, 0, 12, 2], "texture": "#skin" },
         "down": { "uv": [12, 0, 14, 2], "texture": "#skin" }
       }
     },
@@ -56,49 +56,101 @@
       }
     },
     {
-      "name": "Left Arm",
+      "name": "Right Arm",
       "from": [11.75, 11.25, 6.125],
       "to": [15.5, 22.5, 9.875],
       "faces": {
         "north": {"uv":  [11, 5, 12, 8], "texture": "#skin" },
         "south": {"uv":  [13, 5, 14, 8], "texture": "#skin" },
-        "east": {"uv":  [12, 5, 13, 8], "texture": "#skin" },
+        "east": {"uv":  [10, 5, 11, 8], "texture": "#skin" },
         "down": {"uv":  [12, 4, 13, 5], "texture": "#skin" },
         "up": {"uv":  [11, 4, 12, 5], "texture": "#skin" }
       }
     },
     {
-      "name": "Right Arm",
+      "name": "Right Arm Layer",
+      "from": [11.25, 10.75, 5.625],
+      "to": [16, 23, 10.375],
+      "faces": {
+        "north": {"uv":  [11, 9, 12, 12], "texture": "#skin" },
+        "south": {"uv":  [13, 9, 14, 12], "texture": "#skin" },
+        "east": {"uv":  [10, 9, 11, 12], "texture": "#skin" },
+        "west": {"uv":  [12, 9, 13, 12], "texture": "#skin" },
+        "down": {"uv":  [12, 8, 13, 9], "texture": "#skin" },
+        "up": {"uv":  [11, 8, 12, 9], "texture": "#skin" }
+      }
+    },
+    {
+      "name": "Left Arm",
       "from": [0.5, 11.25, 6.125],
       "to": [4.25, 22.5, 9.875],
       "faces": {
         "north": {"uv":  [9, 13, 10, 16], "texture": "#skin" },
         "south": {"uv":  [11, 13, 12, 16], "texture": "#skin" },
-        "west": {"uv":  [8, 13, 9, 16], "texture": "#skin" },
+        "west": {"uv":  [10, 13, 11, 16], "texture": "#skin" },
         "down": {"uv":  [10, 12, 11, 13], "texture": "#skin" },
         "up": {"uv":  [9, 12, 10, 13], "texture": "#skin" }
       }
     },
     {
-      "name": "Left Leg",
-      "from": [8, 0, 6.125],
-      "to": [11.75, 11.75, 9.875],
+      "name": "Left Arm Layer",
+      "from": [0, 10.75, 5.625],
+      "to": [4.75, 23, 10.375],
       "faces": {
-        "south": { "uv": [3, 5, 4, 8], "texture": "#skin" },
-        "north": { "uv": [1, 5, 2, 8], "texture": "#skin" },
-        "east":  { "uv": [2, 5, 3, 8], "texture": "#skin" },
-        "down":  { "uv": [2, 4, 3, 5], "texture": "#skin" }
+        "north": {"uv":  [13, 13, 14, 16], "texture": "#skin" },
+        "south": {"uv":  [15, 13, 16, 16], "texture": "#skin" },
+        "east": {"uv":  [12, 13, 13, 16], "texture": "#skin" },
+        "west": {"uv":  [14, 13, 15, 16], "texture": "#skin" },
+        "down": {"uv":  [14, 12, 15, 13], "texture": "#skin" },
+        "up": {"uv":  [13, 12, 14, 13], "texture": "#skin" }
       }
     },
     {
       "name": "Right Leg",
+      "from": [8, 0, 6.125],
+      "to": [11.75, 11.25, 9.875],
+      "faces": {
+        "south": { "uv": [3, 5, 4, 8], "texture": "#skin" },
+        "north": { "uv": [1, 5, 2, 8], "texture": "#skin" },
+        "east":  { "uv": [0, 5, 1, 8], "texture": "#skin" },
+        "down":  { "uv": [2, 4, 3, 5], "texture": "#skin" }
+      }
+    },
+    {
+      "name": "Right Leg Layer",
+      "from": [7.5, -0.5, 5.625],
+      "to": [12.25, 11.75, 10.375],
+      "faces": {
+        "north": {"uv":  [1, 9, 2, 12], "texture": "#skin" },
+        "south": {"uv":  [3, 9, 4, 12], "texture": "#skin" },
+        "east": {"uv":  [0, 9, 1, 12], "texture": "#skin" },
+        "west": {"uv":  [2, 9, 3, 12], "texture": "#skin" },
+        "down": {"uv":  [2, 8, 3, 9], "texture": "#skin" },
+        "up": {"uv":  [1, 8, 2, 9], "texture": "#skin" }
+      }
+    },
+    {
+      "name": "Left Leg",
       "from": [4.25, 0, 6.125],
       "to": [8, 11.25, 9.875],
       "faces": {
         "south": { "uv": [7, 13, 8, 16], "texture": "#skin" },
         "north": { "uv": [5, 13, 6, 16], "texture": "#skin" },
-        "west":  { "uv": [4, 13, 5, 16], "texture": "#skin" },
+        "west":  { "uv": [6, 13, 7, 16], "texture": "#skin" },
         "down":  { "uv": [6, 12, 7, 13], "texture": "#skin" }
+      }
+    },
+    {
+      "name": "Left Leg Layer",
+      "from": [3.75, -0.5, 5.625],
+      "to": [8.5, 11.75, 10.375],
+      "faces": {
+        "north": {"uv":  [1, 13, 2, 16], "texture": "#skin" },
+        "south": {"uv":  [3, 13, 4, 16], "texture": "#skin" },
+        "east": {"uv":  [0, 13, 1, 16], "texture": "#skin" },
+        "west": {"uv":  [2, 13, 3, 16], "texture": "#skin" },
+        "down": {"uv":  [2, 12, 3, 13], "texture": "#skin" },
+        "up": {"uv":  [1, 12, 2, 13], "texture": "#skin" }
       }
     }
   ]

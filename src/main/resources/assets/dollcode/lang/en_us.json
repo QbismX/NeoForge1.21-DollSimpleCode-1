@@ -1,4 +1,11 @@
 {
   "block.dollcode.doll_test_upper": "Upper",
-  "block.dollcode.doll_test_lower": "QbismX Normal"
+  "block.dollcode.doll_test_lower": "QbismX Normal",
+  "block.dollcode.doll_qbism_risk": "QbismX Warning Mode",
+  "block.dollcode.test_skin": "Test Skin",
+  "block.dollcode.qbism_halloween": "QbismX Halloween Mode",
+  "block.dollcode.qbism_christmas": "QbismX Christmas Mode",
+  "block.dollcode.qbism_new_year": "QbismX New Year Mode",
+  "block.dollcode.qbism_error": "QbismX Error Mode",
+  "block.dollcode.qbism_final_mode": "QbismX Final Mode"
 }

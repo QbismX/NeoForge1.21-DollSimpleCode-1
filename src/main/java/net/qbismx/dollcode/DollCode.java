@@ -67,6 +67,13 @@ public class DollCode {
     // クリエイティブモードのアイテム欄に人形ブロックを追加
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) { // 建築ブロックのタブに追加
             event.accept(ModBlocks.DOLL_LOWER_BLOCK);
+            event.accept(ModBlocks.DOLL_RISK_BLOCK);
+            event.accept(ModBlocks.TEST_DOLL);
+            event.accept(ModBlocks.HALLOWEEN_MODE);
+            event.accept(ModBlocks.CHRISTMAS_MODE);
+            event.accept(ModBlocks.NEW_YEAR_MODE);
+            event.accept(ModBlocks.ERROR_MODE);
+            event.accept(ModBlocks.FINAL_MODE);
         }
     }
 
@@ -83,17 +90,5 @@ public class DollCode {
         static void onClientSetup(FMLClientSetupEvent event) {
 
         }
-
-        // 半透明にしたいブロックの設定
-        /*
-        @SubscribeEvent
-        public static void onRegisterRenderTypes(RegisterNamedRenderTypesEvent event){
-            event.register(
-                    ResourceLocation.fromNamespaceAndPath(DollCode.MODID, "translucent"),
-                    RenderType.translucent(),
-                    RenderType.translucent()
-            );
-        }
-         */
     }
 }
